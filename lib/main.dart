@@ -52,11 +52,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent, // 투명한 AppBar 배경색
-        elevation: 0, // 그림자 효과 제거
-        title: Text(''), // 타이틀을 비워서 공간 차지하지 않게
-      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -68,39 +63,47 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      'PRESENTIONNAIRE',
-                      style: GoogleFonts.notoSans(
-                      fontSize: 50.0,
-                      fontWeight: FontWeight.w400,
-                      letterSpacing: 20,
-                      color: Colors.black,  
+                      FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'PRESENTIONNAIRE',
+                        style: GoogleFonts.notoSans(
+                          fontSize: 50.0,
+                          fontWeight: FontWeight.w400,
+                          letterSpacing: 20,
+                          color: Colors.black,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 32.0), // 추가된 여백
-                    Text(
-                      '선물지',
-                      style: GoogleFonts.notoSans(
-                      fontSize: 40.0,
-                      fontWeight: FontWeight.w100,
-                      letterSpacing: 20,
-                      color: Colors.black,  
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        '선물지',
+                        style: GoogleFonts.notoSans(
+                          fontSize: 40.0,
+                          fontWeight: FontWeight.w100,
+                          letterSpacing: 20,
+                          color: Colors.black,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 60.0),
-                    Text(
-                      'COPYRIGHT 2023 BAESEOYOUNG ALL RIGHTS RESERVED',
-                      style: GoogleFonts.notoSans(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.w300,
-                      letterSpacing: 5,
-                      color: Color.fromARGB(255, 109, 109, 109),  
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'COPYRIGHT 2023 BAESEOYOUNG ALL RIGHTS RESERVED',
+                        style: GoogleFonts.notoSans(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.w300,
+                          letterSpacing: 5,
+                          color: Color.fromARGB(255, 109, 109, 109),
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
-                    // 추가적인 텍스트 또는 위젯을 여기에 추가할 수 있습니다.
                   ],
                 ),
               ),
@@ -115,7 +118,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        FittedBox(
+                        fit: BoxFit.scaleDown,
+                         child: Text(
                           '지금, 눈 앞의 너를 깊이 알려는 마음.',
                           style: GoogleFonts.notoSans(
                             fontWeight: FontWeight.w200,
@@ -123,9 +128,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             letterSpacing: 10,
                             color: Colors.black,
                             height: 2.0,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ),
-                        Text(
+                        FittedBox(
+                        fit: BoxFit.scaleDown,
+                         child: Text(
                           '받는 이의 삶에 스며들어 오래 머무는 선물.',
                           style: GoogleFonts.notoSans(
                             fontWeight: FontWeight.w200,
@@ -133,6 +142,8 @@ class _MyHomePageState extends State<MyHomePage> {
                             letterSpacing: 10,
                             color: Colors.black,
                             height: 2.0,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ),
                       ],
@@ -199,7 +210,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        FittedBox(
+                        fit: BoxFit.scaleDown,
+                         child: Text(
                           'COPYRIGHT 2023 BAESEOYOUNG ALL RIGHTS RESERVED',
                           style: GoogleFonts.notoSans(
                             fontWeight: FontWeight.w100,
@@ -207,6 +220,8 @@ class _MyHomePageState extends State<MyHomePage> {
                             letterSpacing: 5,
                             color: Colors.black,
                             height: 2.0,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ),
                       ],
